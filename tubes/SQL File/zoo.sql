@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2021 at 09:22 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Waktu pembuatan: 09 Jun 2022 pada 18.23
+-- Versi server: 10.4.22-MariaDB
+-- Versi PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- Struktur dari tabel `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -37,7 +37,7 @@ CREATE TABLE `permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `permissions`
+-- Dumping data untuk tabel `permissions`
 --
 
 INSERT INTO `permissions` (`id`, `permission`, `createuser`, `deleteuser`, `createbid`, `updatebid`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `permissions` (`id`, `permission`, `createuser`, `deleteuser`, `crea
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbladmin`
+-- Struktur dari tabel `tbladmin`
 --
 
 CREATE TABLE `tbladmin` (
@@ -67,18 +67,19 @@ CREATE TABLE `tbladmin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbladmin`
+-- Dumping data untuk tabel `tbladmin`
 --
 
 INSERT INTO `tbladmin` (`ID`, `Staffid`, `AdminName`, `UserName`, `FirstName`, `LastName`, `MobileNumber`, `Email`, `Status`, `Photo`, `Password`, `AdminRegdate`) VALUES
-(2, '10002', 'Admin', 'admin', 'John', 'Smith  ', 770546590, 'admin@gmail.com', 1, 'face19.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-06-21 10:18:39'),
-(9, '10003', 'Admin', 'harry', 'Harry', 'Ronald ', 757537271, 'harry@gmail.com', 1, 'face27.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-06-21 07:08:48'),
-(29, 'U002', 'User', 'morgan', 'Happy', 'Morgan', 770546590, 'morgan@gmail.com', 1, 'avatar15.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-07-21 14:26:42');
+(2, '10002', 'Admin', 'admin', 'Jajang', 'Jono', 770546590, 'admin@gmail.com', 1, 'face19.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-06-21 10:18:39'),
+(9, '10003', 'Admin', 'harry', 'Harry', 'Galon', 757537271, 'harry@gmail.com', 1, 'face27.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-06-21 07:08:48'),
+(29, 'U002', 'User', 'morgan', 'Captain', 'Morgan', 770546590, 'morgan@gmail.com', 1, 'avatar15.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2021-07-21 14:26:42'),
+(30, '12', 'User', 'yogi', 'yogi', 'saputra', 813214075, 'ymanik730@gmail.com', 1, 'avatar15.jpg', '81dc9bdb52d04dc20036dbd8313ed055', '2022-06-09 10:51:41');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblanimal`
+-- Struktur dari tabel `tblanimal`
 --
 
 CREATE TABLE `tblanimal` (
@@ -93,7 +94,7 @@ CREATE TABLE `tblanimal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tblanimal`
+-- Dumping data untuk tabel `tblanimal`
 --
 
 INSERT INTO `tblanimal` (`ID`, `AnimalName`, `CageNumber`, `FeedNumber`, `Breed`, `AnimalImage`, `Description`, `CreationDate`) VALUES
@@ -105,12 +106,12 @@ INSERT INTO `tblanimal` (`ID`, `AnimalName`, `CageNumber`, `FeedNumber`, `Breed`
 (6, 'Tiger', '12305', 'FN-1006', 'chinese Tiger', '37b3f2f8b979f990fbe8bbf02fb87ddb1596609488.jpg', 'The Indochinese tiger is a tiger from a specific population of the Panthera tigris tigris subspecies that is native to Southeast Asia. This population occurs in Myanmar, Thailand, Laos, Vietnam, Cambodia and southwestern China.', '2021-07-21 14:35:14'),
 (7, 'Bear', '12307', 'FN-1007', 'Sloth Bear', 'efc1a80c391be252d7d777a437f868701596611141.jpg', 'The sloth bear (Melursus ursinus) is a myrmecophagous bear species native to the Indian subcontinent. It feeds on fruits, ants and termites. It is listed as Vulnerable on the IUCN Red List, mainly because of habitat loss and degradation.', '2021-07-10 09:40:11'),
 (8, 'Bear', '12308', 'FN-1008', 'Sun Bear', '6c09a06117fd4daa8fd74f6d1560d6a01596609406.jpg', 'The sun bear (Helarctos malayanus) is a species in the family Ursidae occurring in the tropical forests of Southeast Asia. It is the smallest bear, standing nearly 70 centimetres (28 inches) at the shoulder and weighing 25–65 kilograms (55–143 pounds). It is stockily built, with large paws, strongly curved claws, small rounded ears and a short snout. The fur is generally jet-black, but can vary from grey to red. Sun bears get their name from the characteristic orange to cream coloured chest patch. Its unique morphology—inward-turned front feet, flattened chest, powerful forelimbs with large claws—suggests adaptations for climbing.', '2021-06-05 06:36:46'),
-(11, 'Loin', '12309', 'FN-1009', 'Local lion', 'g2.jpg', '50 years old from north east of western lift valley in Uganda, it\'s food is meat of other animals.', '2021-11-25 08:18:33');
+(11, 'Lion', '12309', 'FN-1009', 'Local lion', 'g2.jpg', '50 years old from north east of western lift valley in Uganda, it\'s food is meat of other animals.', '2022-06-09 03:54:53');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblticforeigner`
+-- Struktur dari tabel `tblticforeigner`
 --
 
 CREATE TABLE `tblticforeigner` (
@@ -124,20 +125,20 @@ CREATE TABLE `tblticforeigner` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tblticforeigner`
+-- Dumping data untuk tabel `tblticforeigner`
 --
 
 INSERT INTO `tblticforeigner` (`ID`, `TicketID`, `NoAdult`, `NoChildren`, `AdultUnitprice`, `ChildUnitprice`, `PostingDate`) VALUES
-(1, '103618900', 2, 1, '1000', '800', '2021-06-30 12:05:44'),
-(3, '671028076', 5, 2, '1000', '800', '2021-06-30 12:06:26'),
-(4, '776418013', 5, 2, '1000', '800', '2021-06-30 12:09:33'),
-(19, '467509736', 2, 1, '1100', '800', '2021-07-10 09:47:28'),
-(20, '202792330', 2, 0, '1100', '800', '2021-07-10 12:33:03');
+(1, '103618900', 2, 1, 'Rp.50.000,00', 'Rp.25.000,00', '2022-06-30 12:05:44'),
+(3, '671028076', 5, 2, 'Rp.50.000,00', 'Rp.25.000,00', '2022-06-30 08:35:54'),
+(4, '776418013', 5, 2, 'Rp.50.000,00', 'Rp.25.000,00', '2022-06-30 12:09:33'),
+(19, '467509736', 2, 1, 'Rp.60.000,00', 'Rp.25.000,00', '2022-07-10 09:47:28'),
+(20, '202792330', 2, 0, 'Rp.60.000,00', 'Rp.25.000,00', '2022-07-10 12:33:03');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblticindian`
+-- Struktur dari tabel `tblticindian`
 --
 
 CREATE TABLE `tblticindian` (
@@ -151,20 +152,20 @@ CREATE TABLE `tblticindian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tblticindian`
+-- Dumping data untuk tabel `tblticindian`
 --
 
 INSERT INTO `tblticindian` (`ID`, `TicketID`, `NoAdult`, `NoChildren`, `AdultUnitprice`, `ChildUnitprice`, `PostingDate`) VALUES
-(1, '340973208', 5, 3, '200', '100', '2021-06-30 08:04:11'),
-(8, '528090550', 5, 3, '300', '80', '2021-06-04 05:15:17'),
-(11, '529665688', 2, 2, '350', '80', '2021-06-12 09:00:01'),
-(12, '187945062', 3, 3, '350', '80', '2021-06-12 09:02:12'),
-(13, '839303414', 2, 1, '350', '100', '2021-07-10 12:35:35');
+(1, '340973208', 5, 3, '50.000', '25.000', '2021-06-30 08:04:11'),
+(8, '528090550', 5, 3, '50.000', '25.000', '2021-06-04 05:15:17'),
+(11, '529665688', 2, 2, '50.000', '25.000', '2021-06-12 09:00:01'),
+(12, '187945062', 3, 3, '50.000', '25.000', '2021-06-12 09:02:12'),
+(13, '839303414', 2, 1, '50.000', '25.000', '2021-07-10 12:35:35');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbltickettype`
+-- Struktur dari tabel `tbltickettype`
 --
 
 CREATE TABLE `tbltickettype` (
@@ -175,39 +176,39 @@ CREATE TABLE `tbltickettype` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tbltickettype`
+-- Dumping data untuk tabel `tbltickettype`
 --
 
 INSERT INTO `tbltickettype` (`ID`, `TicketType`, `Price`, `CreationDate`) VALUES
-(1, 'Normal Adult', '350', '2019-12-30 06:31:56'),
-(2, 'Normal Child', '100', '2019-12-30 06:32:27'),
-(3, 'Foreigner Adult', '1100', '2019-12-30 06:33:16'),
-(4, 'Foreigner Child', '800', '2019-12-30 06:33:38');
+(1, 'Normal Adult', '50.000', '2019-12-30 06:31:56'),
+(2, 'Normal Child', '25.000', '2019-12-30 06:32:27'),
+(3, 'Foreigner Adult', '60.000', '2019-12-30 06:33:16'),
+(4, 'Foreigner Child', '30.000', '2019-12-30 06:33:38');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `permissions`
+-- Indeks untuk tabel `permissions`
 --
 ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbladmin`
+-- Indeks untuk tabel `tbladmin`
 --
 ALTER TABLE `tbladmin`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `tblanimal`
+-- Indeks untuk tabel `tblanimal`
 --
 ALTER TABLE `tblanimal`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `tblticforeigner`
+-- Indeks untuk tabel `tblticforeigner`
 --
 ALTER TABLE `tblticforeigner`
   ADD PRIMARY KEY (`ID`),
@@ -215,58 +216,58 @@ ALTER TABLE `tblticforeigner`
   ADD KEY `TicketID_2` (`TicketID`);
 
 --
--- Indexes for table `tblticindian`
+-- Indeks untuk tabel `tblticindian`
 --
 ALTER TABLE `tblticindian`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `TicketID` (`TicketID`);
 
 --
--- Indexes for table `tbltickettype`
+-- Indeks untuk tabel `tbltickettype`
 --
 ALTER TABLE `tbltickettype`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `TicketType` (`TicketType`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `permissions`
+-- AUTO_INCREMENT untuk tabel `permissions`
 --
 ALTER TABLE `permissions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `tbladmin`
+-- AUTO_INCREMENT untuk tabel `tbladmin`
 --
 ALTER TABLE `tbladmin`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `tblanimal`
+-- AUTO_INCREMENT untuk tabel `tblanimal`
 --
 ALTER TABLE `tblanimal`
   MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `tblticforeigner`
+-- AUTO_INCREMENT untuk tabel `tblticforeigner`
 --
 ALTER TABLE `tblticforeigner`
   MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `tblticindian`
+-- AUTO_INCREMENT untuk tabel `tblticindian`
 --
 ALTER TABLE `tblticindian`
   MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `tbltickettype`
+-- AUTO_INCREMENT untuk tabel `tbltickettype`
 --
 ALTER TABLE `tbltickettype`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
